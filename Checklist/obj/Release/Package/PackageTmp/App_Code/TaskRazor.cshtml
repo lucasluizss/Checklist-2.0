@@ -1,0 +1,115 @@
+﻿@helper ModalEditTask(string idTitleModal, string idDescriptionModel, string btnDescription, string idStartDateModal, string idEndDateModal, string idPriorityModal)
+{
+    <!-- Modal Editar Tarefa-->
+    <div class="modal fade ed-modal-lg">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"><img src="~/Images/editar.png" style="width:30px; height:30px;" /><b><u>Editar tarefa</u></b></h4>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label"><b>Título:</b></label>
+                            <input id="@idTitleModal" class="form-control" maxlength="100" placeholder="✍️ Digite o título de sua tarefa..." required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="control-label"><b>Tarefa:</b></label>
+                            <textarea id="@idDescriptionModel" class="form-control" maxlength="1000" rows="5" placeholder="✍️ Digite sua tarefa aqui..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-4">
+                                <label class="control-label"><b>📆 Inicia em:</b></label>
+                                <div><input class="form-control date" type="text" id="@idStartDateModal" required /></div>
+                            </div>
+                            <div class="col-md-4">
+                                <label class="control-label"><b>📆 Termina em:</b></label>
+                                <div><input class="form-control date" type="text" id="@idEndDateModal" required /></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label"><b>Prioridade:</b></label>
+                            <div class="form-control">
+                                <select class="col-md-3" id="@idPriorityModal">
+                                    <option value="0">Selecionar...</option>
+                                    <option value="1">Alta</option>
+                                    <option value="2">Média</option>
+                                    <option value="3">Baixa</option>
+                                    <option value="4">Nenhuma</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">❌ Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="@btnDescription">✔️ Salvar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@helper ModalChangeStep(string btnChangeStep, string idReason, string idChangeStep)
+{
+    <!-- Small Modal Delete Task-->
+    <div class="modal fade bd-modal-sm changeStepTask">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"><img src="~/Images/editar.png" style="width:30px; height:30px;" /><b><u>Alterar Progresso</u></b></h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="message-text" class="control-label"><b>Selecione o progresso atual:</b></label>
+                        <select class="form-control" id="@idChangeStep">
+                            <option value="1">Aguardando Início</option>
+                            <option value="2">Em execução</option>
+                            <option value="3">Suspenso</option>
+                            <option value="4">Concluido com Falha</option>
+                            <option value="5">Concluido com Sucesso Parcial</option>
+                            <option value="6">Concluido com Sucesso Total</option>
+                        </select>
+                        <br>
+                    </div>
+                    <div class="form-group reason-step hide">
+                        <label for="message-text" class="control-label"><b>Motivo:</b></label>
+                        <textarea id="@idReason" class="form-control" maxlength="1000" rows="3" placeholder="✍️ Digite o motivo..." required></textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">👎🏼 Cancelar</button>
+                    <button type="button" class="btn btn-primary" id="@btnChangeStep">👍🏼 Confirmar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@helper ModalDeleteTask(string btnDeleteTask)
+{
+    <!-- Small Modal Delete Task-->
+    <div class="modal fade bd-modal-sm delete-task">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title"><img src="~/Images/delete.png" style="width:30px; height:30px;" /><b><u>Apagar tarefa?</u></b></h4>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">👎🏼 Não</button>
+                    <button type="button" class="btn btn-primary" id="@btnDeleteTask">👍🏼 Sim</button>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@helper Gif()
+{
+    <div class="loader" id="overlay">
+        <img src="~/Images/loading-image.gif" id="loading" class="loading" alt="loading" title="Aguarde..." />
+    </div>
+}

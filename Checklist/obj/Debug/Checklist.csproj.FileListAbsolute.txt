@@ -1,0 +1,202 @@
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\csc.exe
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\System.Collections.Immutable.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\vbc.exe
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe.config
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\Checklist.dll.config
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\Checklist.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\Checklist.pdb
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.SqlServer.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\Microsoft.Web.Infrastructure.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.Entity.EF6.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Helpers.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Mvc.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Razor.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Deployment.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Razor.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.SqlServer.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.Entity.EF6.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Razor.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Deployment.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Razor.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Helpers.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Mvc.xml
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\obj\Debug\Checklist.dll
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\obj\Debug\Checklist.pdb
+D:\Lucas\Desktop\CheckList\Projeto\Projeto_Checklist\Checklist\Checklist\obj\Debug\Checklist.csprojResolveAssemblyReference.cache
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\csc.exe
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\System.Collections.Immutable.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\vbc.exe
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe.config
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\Checklist.dll.config
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\Checklist.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\Checklist.pdb
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.SqlServer.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\Microsoft.Web.Infrastructure.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.Entity.EF6.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Helpers.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Mvc.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Razor.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Deployment.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Razor.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\EntityFramework.SqlServer.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\MySql.Data.Entity.EF6.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Razor.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Deployment.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Webpages.Razor.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Helpers.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\bin\System.Web.Mvc.xml
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\obj\Debug\Checklist.dll
+D:\Lucas\Desktop\Projeto_Checklist\Checklist\Checklist\obj\Debug\Checklist.pdb
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\csc.exe
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\System.Collections.Immutable.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\vbc.exe
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe.config
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\Checklist.dll.config
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\Checklist.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\Checklist.pdb
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\EntityFramework.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\EntityFramework.SqlServer.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\Microsoft.Web.Infrastructure.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\MySql.Data.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\MySql.Data.Entity.EF6.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Helpers.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Mvc.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Razor.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Webpages.Deployment.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Webpages.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Webpages.Razor.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\EntityFramework.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\EntityFramework.SqlServer.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\MySql.Data.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\MySql.Data.Entity.EF6.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Razor.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Webpages.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Webpages.Deployment.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Webpages.Razor.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Helpers.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\bin\System.Web.Mvc.xml
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\obj\Debug\Checklist.dll
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\obj\Debug\Checklist.pdb
+D:\Lucas\Desktop\Projeto_Checklist - [Login]\Checklist\Checklist\obj\Debug\Checklist.csprojResolveAssemblyReference.cache
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\csc.exe
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\System.Collections.Immutable.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\System.Reflection.Metadata.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\vbc.exe
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\roslyn\VBCSCompiler.exe.config
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\Checklist.dll.config
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\Checklist.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\Checklist.pdb
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\EntityFramework.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\EntityFramework.SqlServer.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\Microsoft.Web.Infrastructure.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\MySql.Data.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\MySql.Data.Entity.EF6.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Helpers.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Mvc.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Razor.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Webpages.Deployment.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Webpages.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Webpages.Razor.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\EntityFramework.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\EntityFramework.SqlServer.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\MySql.Data.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\MySql.Data.Entity.EF6.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Razor.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Webpages.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Webpages.Deployment.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Webpages.Razor.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Helpers.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\bin\System.Web.Mvc.xml
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\obj\Debug\Checklist.csprojResolveAssemblyReference.cache
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\obj\Debug\Checklist.dll
+D:\Lucas\Desktop\Projeto_Checklist2.0\Checklist\Checklist\obj\Debug\Checklist.pdb
+D:\Projetos\Checklist2.0\Checklist\obj\Debug\Checklist.csproj.CoreCompileInputs.cache
+D:\Projetos\Checklist2.0\Checklist\bin\Checklist.dll.config
+D:\Projetos\Checklist2.0\Checklist\bin\Checklist.dll
+D:\Projetos\Checklist2.0\Checklist\bin\Checklist.pdb
+D:\Projetos\Checklist2.0\Checklist\bin\EntityFramework.dll
+D:\Projetos\Checklist2.0\Checklist\bin\EntityFramework.SqlServer.dll
+D:\Projetos\Checklist2.0\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Projetos\Checklist2.0\Checklist\bin\Microsoft.Web.Infrastructure.dll
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Bson.dll
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Driver.Core.dll
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Driver.dll
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Driver.Legacy.dll
+D:\Projetos\Checklist2.0\Checklist\bin\MySql.Data.dll
+D:\Projetos\Checklist2.0\Checklist\bin\MySql.Data.Entity.EF6.dll
+D:\Projetos\Checklist2.0\Checklist\bin\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Helpers.dll
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Mvc.dll
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Razor.dll
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Webpages.Deployment.dll
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Webpages.dll
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Webpages.Razor.dll
+D:\Projetos\Checklist2.0\Checklist\bin\EntityFramework.xml
+D:\Projetos\Checklist2.0\Checklist\bin\EntityFramework.SqlServer.xml
+D:\Projetos\Checklist2.0\Checklist\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Bson.xml
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Driver.xml
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Driver.Core.xml
+D:\Projetos\Checklist2.0\Checklist\bin\MongoDB.Driver.Legacy.xml
+D:\Projetos\Checklist2.0\Checklist\bin\MySql.Data.xml
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Razor.xml
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Webpages.xml
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Webpages.Deployment.xml
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Webpages.Razor.xml
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Helpers.xml
+D:\Projetos\Checklist2.0\Checklist\bin\System.Web.Mvc.xml
+D:\Projetos\Checklist2.0\Checklist\obj\Debug\Checklist.dll
+D:\Projetos\Checklist2.0\Checklist\obj\Debug\Checklist.pdb
+D:\Projetos\Checklist2.0\Checklist\bin\Newtonsoft.Json.dll
+D:\Projetos\Checklist2.0\Checklist\bin\Newtonsoft.Json.xml

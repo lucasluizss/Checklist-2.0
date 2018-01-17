@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Lucas\Desktop\CheckList</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="App_Code/TaskRazor.cshtml">
+      <publishTime>08/20/2017 22:29:10</publishTime>
+    </File>
+    <File Include="bin/Checklist.dll">
+      <publishTime>08/21/2017 20:56:21</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/26/2017 15:30:49</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/26/2017 15:30:49</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>06/17/2016 18:28:04</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.Entity.EF6.dll">
+      <publishTime>06/17/2016 18:28:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>03/26/2017 15:21:38</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>03/29/2017 20:26:13</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>04/19/2017 13:50:03</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Bold.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Bold.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Bold.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Bold.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Light.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Light.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Light.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Light.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Medium.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Medium.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Medium.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Medium.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Regular.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Regular.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Regular.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Regular.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Thin.eot">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Thin.ttf">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Thin.woff">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/fonts/roboto/Roboto-Thin.woff2">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/materialize.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/materialize.min.css">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>08/21/2017 20:31:01</publishTime>
+    </File>
+    <File Include="Content/Tasks/Tasks.css">
+      <publishTime>08/20/2017 22:26:12</publishTime>
+    </File>
+    <File Include="Content/User/Login.css">
+      <publishTime>04/07/2017 22:38:07</publishTime>
+    </File>
+    <File Include="Content/User/User.css">
+      <publishTime>04/06/2017 21:42:16</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Bold.eot">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Bold.ttf">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Bold.woff">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Bold.woff2">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.eot">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.ttf">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.woff">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Light.woff2">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.eot">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.ttf">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.woff">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Medium.woff2">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.eot">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.ttf">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.woff">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Regular.woff2">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.eot">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.ttf">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.woff">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="fonts/roboto/Roboto-Thin.woff2">
+      <publishTime>03/30/2017 06:09:41</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>03/26/2017 15:21:37</publishTime>
+    </File>
+    <File Include="Images/change-password.png">
+      <publishTime>04/09/2017 11:26:27</publishTime>
+    </File>
+    <File Include="Images/delete.png">
+      <publishTime>03/29/2017 20:36:33</publishTime>
+    </File>
+    <File Include="Images/editar.png">
+      <publishTime>03/29/2017 20:36:33</publishTime>
+    </File>
+    <File Include="Images/favicon.ico">
+      <publishTime>04/08/2017 19:48:11</publishTime>
+    </File>
+    <File Include="Images/list-tasks.png">
+      <publishTime>03/27/2017 20:14:12</publishTime>
+    </File>
+    <File Include="Images/loading-image.gif">
+      <publishTime>04/01/2017 12:24:37</publishTime>
+    </File>
+    <File Include="Images/login-icon.png">
+      <publishTime>04/06/2017 23:31:12</publishTime>
+    </File>
+    <File Include="Images/new-task.png">
+      <publishTime>03/27/2017 20:14:21</publishTime>
+    </File>
+    <File Include="Images/newuser-icon.png">
+      <publishTime>04/07/2017 23:25:47</publishTime>
+    </File>
+    <File Include="Images/umbler.png">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Models/Checklist.edmx.diagram">
+      <publishTime>05/08/2017 19:41:50</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>03/26/2017 15:31:24</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>03/26/2017 15:39:54</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>03/26/2017 15:39:55</publishTime>
+    </File>
+    <File Include="Scripts/client_secret_640514239595-imtslisbd9unmv9voe5jor4i7l2eq31d.apps.googleusercontent.com.json">
+      <publishTime>04/06/2017 08:42:38</publishTime>
+    </File>
+    <File Include="Scripts/javascript.js">
+      <publishTime>04/19/2017 11:25:31</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>03/26/2017 15:40:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>03/26/2017 15:40:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>03/26/2017 15:40:00</publishTime>
+    </File>
+    <File Include="Scripts/jquery.mask.min.js">
+      <publishTime>05/08/2017 19:56:07</publishTime>
+    </File>
+    <File Include="Scripts/jquery.toaster.js">
+      <publishTime>05/07/2017 01:12:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>03/26/2017 15:39:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>03/26/2017 15:39:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>03/26/2017 15:39:58</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>03/26/2017 15:39:59</publishTime>
+    </File>
+    <File Include="Scripts/material.js">
+      <publishTime>03/29/2017 22:41:21</publishTime>
+    </File>
+    <File Include="Scripts/material.min.js">
+      <publishTime>03/29/2017 22:41:21</publishTime>
+    </File>
+    <File Include="Scripts/materialize.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/materialize.min.js">
+      <publishTime>01/01/0001 00:00:00</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>03/26/2017 15:40:00</publishTime>
+    </File>
+    <File Include="Scripts/MomentJs.js">
+      <publishTime>08/20/2017 13:17:42</publishTime>
+    </File>
+    <File Include="Scripts/platform.js">
+      <publishTime>04/06/2017 08:37:34</publishTime>
+    </File>
+    <File Include="Scripts/Tasks/Tasks.js">
+      <publishTime>08/21/2017 20:05:05</publishTime>
+    </File>
+    <File Include="Scripts/tinymce.min.js">
+      <publishTime>04/12/2017 20:42:14</publishTime>
+    </File>
+    <File Include="Scripts/User/User.js">
+      <publishTime>08/20/2017 23:41:51</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>08/21/2017 19:50:11</publishTime>
+    </File>
+    <File Include="Views/Tasks/ListTasks.cshtml">
+      <publishTime>08/21/2017 20:35:37</publishTime>
+    </File>
+    <File Include="Views/Tasks/Teste.cshtml">
+      <publishTime>08/20/2017 20:02:00</publishTime>
+    </File>
+    <File Include="Views/User/ChangePassword.cshtml">
+      <publishTime>04/09/2017 13:44:38</publishTime>
+    </File>
+    <File Include="Views/User/EmailConfirmed.cshtml">
+      <publishTime>08/20/2017 23:42:27</publishTime>
+    </File>
+    <File Include="Views/User/Login.cshtml">
+      <publishTime>08/20/2017 19:54:12</publishTime>
+    </File>
+    <File Include="Views/User/NewUser.cshtml">
+      <publishTime>04/23/2017 20:32:10</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>03/26/2017 15:21:37</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>03/28/2017 22:11:38</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>08/21/2017 20:56:23</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ChecklistModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="priority">
+    <Key>
+      <PropertyRef Name="IdPriority" />
+    </Key>
+    <Property Name="IdPriority" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescriptionPriority" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tasks" Relationship="Self.tasks_ibfk_3" FromRole="priority" ToRole="tasks" />
+  </EntityType>
+  <EntityType Name="reasons">
+    <Key>
+      <PropertyRef Name="IdReason" />
+    </Key>
+    <Property Name="IdReason" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdTask" Type="Int32" Nullable="false" />
+    <Property Name="IdStep" Type="Int32" Nullable="false" />
+    <Property Name="ChangeDate" Type="DateTime" Nullable="false" />
+    <Property Name="Description" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tasks" Relationship="Self.FK__tasks" FromRole="reasons" ToRole="tasks" />
+    <NavigationProperty Name="step" Relationship="Self.FK_reasons_step" FromRole="reasons" ToRole="step" />
+  </EntityType>
+  <EntityType Name="step">
+    <Key>
+      <PropertyRef Name="IdStep" />
+    </Key>
+    <Property Name="IdStep" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescriptionStep" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="reasons" Relationship="Self.FK_reasons_step" FromRole="step" ToRole="reasons" />
+    <NavigationProperty Name="tasks" Relationship="Self.tasks_ibfk_2" FromRole="step" ToRole="tasks" />
+  </EntityType>
+  <EntityType Name="tasks">
+    <Key>
+      <PropertyRef Name="IdTask" />
+    </Key>
+    <Property Name="IdTask" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="IdStep" Type="Int32" Nullable="false" />
+    <Property Name="IdPriority" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" />
+    <NavigationProperty Name="priority" Relationship="Self.tasks_ibfk_3" FromRole="tasks" ToRole="priority" />
+    <NavigationProperty Name="reasons" Relationship="Self.FK__tasks" FromRole="tasks" ToRole="reasons" />
+    <NavigationProperty Name="step" Relationship="Self.tasks_ibfk_2" FromRole="tasks" ToRole="step" />
+    <NavigationProperty Name="user" Relationship="Self.tasks_ibfk_1" FromRole="tasks" ToRole="user" />
+    <Property Name="LastDescriptionReason" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="ADM" Type="Boolean" Nullable="false" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tasks" Relationship="Self.tasks_ibfk_1" FromRole="user" ToRole="tasks" />
+  </EntityType>
+  <Association Name="tasks_ibfk_3">
+    <End Role="priority" Type="Self.priority" Multiplicity="1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="priority">
+        <PropertyRef Name="IdPriority" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdPriority" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__tasks">
+    <End Role="tasks" Type="Self.tasks" Multiplicity="1" />
+    <End Role="reasons" Type="Self.reasons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tasks">
+        <PropertyRef Name="IdTask" />
+      </Principal>
+      <Dependent Role="reasons">
+        <PropertyRef Name="IdTask" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_reasons_step">
+    <End Role="step" Type="Self.step" Multiplicity="1" />
+    <End Role="reasons" Type="Self.reasons" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="step">
+        <PropertyRef Name="IdStep" />
+      </Principal>
+      <Dependent Role="reasons">
+        <PropertyRef Name="IdStep" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tasks_ibfk_2">
+    <End Role="step" Type="Self.step" Multiplicity="1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="step">
+        <PropertyRef Name="IdStep" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdStep" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tasks_ibfk_1">
+    <End Role="user" Type="Self.user" Multiplicity="1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ChecklistEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="priority" EntityType="Self.priority" />
+    <EntitySet Name="reasons" EntityType="Self.reasons" />
+    <EntitySet Name="step" EntityType="Self.step" />
+    <EntitySet Name="tasks" EntityType="Self.tasks" />
+    <EntitySet Name="user" EntityType="Self.user" />
+    <AssociationSet Name="tasks_ibfk_3" Association="Self.tasks_ibfk_3">
+      <End Role="priority" EntitySet="priority" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="FK__tasks" Association="Self.FK__tasks">
+      <End Role="tasks" EntitySet="tasks" />
+      <End Role="reasons" EntitySet="reasons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_reasons_step" Association="Self.FK_reasons_step">
+      <End Role="step" EntitySet="step" />
+      <End Role="reasons" EntitySet="reasons" />
+    </AssociationSet>
+    <AssociationSet Name="tasks_ibfk_2" Association="Self.tasks_ibfk_2">
+      <End Role="step" EntitySet="step" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="tasks_ibfk_1" Association="Self.tasks_ibfk_1">
+      <End Role="user" EntitySet="user" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

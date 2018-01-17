@@ -1,0 +1,72 @@
+﻿a:link {
+    color: black;
+}
+
+/* link que foi visitado */
+a:visited {
+    color: black;
+}
+
+/* mouse over */
+a:hover {
+    color: #000;
+}
+
+/* link selecionado */
+a:active {
+    color: black;
+}
+
+#btnTaskSave{
+    float:right;
+}
+
+/*textarea{
+    width:100%;
+}*/
+
+.ReadyStatus {
+    color: #117106;
+    cursor: default;
+}
+
+.ProgressStatus {
+    color: indianred;
+    cursor: default;
+}
+
+.ReadyDescription{
+    text-decoration: line-through !important;
+    cursor: pointer;
+    color: #000;
+}
+
+.ProgressStep{
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #000;
+}
+
+label {
+    color: #000;
+}
+
+#editTask {
+    cursor: pointer;
+}
+
+#deleteTask {
+    cursor: pointer;
+}
+
+textarea{
+    max-width:100%;
+    width:100%;
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    
+    textarea{
+        margin-bottom:20px;
+    }
+}

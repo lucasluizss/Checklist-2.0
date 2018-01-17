@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="checklistModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.7" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="priority">
+    <Key>
+      <PropertyRef Name="IdPriority" />
+    </Key>
+    <Property Name="IdPriority" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescriptionPriority" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
+  <EntityType Name="step">
+    <Key>
+      <PropertyRef Name="IdStep" />
+    </Key>
+    <Property Name="IdStep" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DescriptionStep" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tasks">
+    <Key>
+      <PropertyRef Name="IdTask" />
+    </Key>
+    <Property Name="IdTask" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="IdStep" Type="int" Nullable="false" />
+    <Property Name="IdPriority" Type="int" Nullable="false" />
+    <Property Name="Title" Type="varchar" MaxLength="100" Nullable="false" />
+    <Property Name="Description" Type="varchar" MaxLength="1000" />
+    <Property Name="StartDate" Type="date" Nullable="false" />
+    <Property Name="EndDate" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="100" />
+    <Property Name="Email" Type="varchar" MaxLength="100" />
+    <Property Name="Password" Type="varchar" MaxLength="50" />
+    <Property Name="ADM" Type="bit" />
+    <Property Name="EmailConfirmed" Type="bit" Nullable="false" />
+    <Property Name="Code" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <Association Name="tasks_ibfk_1">
+    <End Role="user" Type="Self.user" Multiplicity="1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tasks_ibfk_2">
+    <End Role="step" Type="Self.step" Multiplicity="1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="step">
+        <PropertyRef Name="IdStep" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdStep" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tasks_ibfk_3">
+    <End Role="priority" Type="Self.priority" Multiplicity="1" />
+    <End Role="tasks" Type="Self.tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="priority">
+        <PropertyRef Name="IdPriority" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdPriority" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="checklistModelStoreContainer">
+    <EntitySet Name="priority" EntityType="Self.priority" Schema="checklist" store:Type="Tables" />
+    <EntitySet Name="step" EntityType="Self.step" Schema="checklist" store:Type="Tables" />
+    <EntitySet Name="tasks" EntityType="Self.tasks" Schema="checklist" store:Type="Tables" />
+    <EntitySet Name="user" EntityType="Self.user" Schema="checklist" store:Type="Tables" />
+    <AssociationSet Name="tasks_ibfk_1" Association="Self.tasks_ibfk_1">
+      <End Role="user" EntitySet="user" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="tasks_ibfk_2" Association="Self.tasks_ibfk_2">
+      <End Role="step" EntitySet="step" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="tasks_ibfk_3" Association="Self.tasks_ibfk_3">
+      <End Role="priority" EntitySet="priority" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Login";
+}
+
+@Html.Raw(ViewBag.SomeMessage)
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    <br />
+    <div class="form-horizontal">
+        <h4 class="col-lg-offset-1"><img src="~/Images/login-icon.png" width="40" height="40" /><b><u>Login</u></b></h4>
+        <hr />
+        <span class="col-lg-offset-1">@Html.ValidationMessage("error", new { @class = "text-danger" })</span>
+
+        <div class="form-group">
+            <label class="control-label col-md-1">E-mail:</label>
+            <div class="col-md-3">
+                <input type="email" name="Email" class="form-control" placeholder="📧 Digite seu email aqui..."  maxlength="100" required autofocus/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-1">Senha:</label>
+            <div class="col-md-3">
+                <input type="password" name="Password" class="form-control" placeholder="🔑 Digite sua super senha aqui..."  maxlength="50" required autofocus/>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-12">
+                @*<label class="col-md-offset-1 checkbox pull-left"><input type="checkbox" value="remember-me">Lembre-me</label>*@
+                <input class="col-md-2 col-md-offset-1 btn btn-default" type="submit" value="✅ ENTRAR" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-8 col-md-offset-1">
+                <a href="@Url.Action("NewUser","User")" class="">Criar uma conta? </a>
+                <p>Em breve você poderá entrar com sua conta do Google =) Aguarde...</p>
+                @*<div class="g-signin2" data-onsuccess="onSignIn"></div>*@
+            </div>
+        </div>
+    </div>
+}

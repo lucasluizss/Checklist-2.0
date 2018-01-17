@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="checklistModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="user">
+    <Key>
+      <PropertyRef Name="IdUser" />
+    </Key>
+    <Property Name="IdUser" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="ADM" Type="Boolean" />
+    <Property Name="EmailConfirmed" Type="Boolean" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="tasks" Relationship="checklistModel.tasks_ibfk_1" FromRole="user" ToRole="tasks" />
+  </EntityType>
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="user" EntityType="Self.user" />
+    <EntitySet Name="step" EntityType="checklistModel.step" />
+    <EntitySet Name="tasks" EntityType="checklistModel.tasks" />
+    <AssociationSet Name="tasks_ibfk_2" Association="checklistModel.tasks_ibfk_2">
+      <End Role="step" EntitySet="step" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <AssociationSet Name="tasks_ibfk_1" Association="checklistModel.tasks_ibfk_1">
+      <End Role="user" EntitySet="user" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+    <EntitySet Name="priority" EntityType="checklistModel.priority" />
+    <AssociationSet Name="tasks_ibfk_3" Association="checklistModel.tasks_ibfk_3">
+      <End Role="priority" EntitySet="priority" />
+      <End Role="tasks" EntitySet="tasks" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="step">
+    <Key>
+      <PropertyRef Name="IdStep" />
+    </Key>
+    <Property Name="IdStep" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescriptionStep" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tasks" Relationship="checklistModel.tasks_ibfk_2" FromRole="step" ToRole="tasks" />
+  </EntityType>
+  <EntityType Name="tasks">
+    <Key>
+      <PropertyRef Name="IdTask" />
+    </Key>
+    <Property Name="IdTask" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IdUser" Type="Int32" Nullable="false" />
+    <Property Name="IdStep" Type="Int32" Nullable="false" />
+    <Property Name="Title" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="Description" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="StartDate" Type="DateTime" Nullable="false" />
+    <Property Name="EndDate" Type="DateTime" Nullable="false" />
+    <NavigationProperty Name="step" Relationship="checklistModel.tasks_ibfk_2" FromRole="tasks" ToRole="step" />
+    <NavigationProperty Name="user" Relationship="checklistModel.tasks_ibfk_1" FromRole="tasks" ToRole="user" />
+    <Property Name="IdPriority" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="priority" Relationship="checklistModel.tasks_ibfk_3" FromRole="tasks" ToRole="priority" />
+  </EntityType>
+  <Association Name="tasks_ibfk_2">
+    <End Type="checklistModel.step" Role="step" Multiplicity="1" />
+    <End Type="checklistModel.tasks" Role="tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="step">
+        <PropertyRef Name="IdStep" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdStep" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="tasks_ibfk_1">
+    <End Type="checklistModel.user" Role="user" Multiplicity="1" />
+    <End Type="checklistModel.tasks" Role="tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="user">
+        <PropertyRef Name="IdUser" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="priority">
+    <Key>
+      <PropertyRef Name="IdPriority" />
+    </Key>
+    <Property Name="IdPriority" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="DescriptionPriority" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tasks" Relationship="checklistModel.tasks_ibfk_3" FromRole="priority" ToRole="tasks" />
+  </EntityType>
+  <Association Name="tasks_ibfk_3">
+    <End Type="checklistModel.priority" Role="priority" Multiplicity="1" />
+    <End Type="checklistModel.tasks" Role="tasks" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="priority">
+        <PropertyRef Name="IdPriority" />
+      </Principal>
+      <Dependent Role="tasks">
+        <PropertyRef Name="IdPriority" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

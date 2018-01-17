@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="checklistModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="user">
+      <EntityTypeMapping TypeName="checklistModel.user">
+        <MappingFragment StoreEntitySet="user">
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ADM" ColumnName="ADM" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="step">
+      <EntityTypeMapping TypeName="checklistModel.step">
+        <MappingFragment StoreEntitySet="step">
+          <ScalarProperty Name="DescriptionStep" ColumnName="DescriptionStep" />
+          <ScalarProperty Name="IdStep" ColumnName="IdStep" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tasks">
+      <EntityTypeMapping TypeName="checklistModel.tasks">
+        <MappingFragment StoreEntitySet="tasks">
+          <ScalarProperty Name="IdPriority" ColumnName="IdPriority" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="IdStep" ColumnName="IdStep" />
+          <ScalarProperty Name="IdUser" ColumnName="IdUser" />
+          <ScalarProperty Name="IdTask" ColumnName="IdTask" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="priority">
+      <EntityTypeMapping TypeName="checklistModel.priority">
+        <MappingFragment StoreEntitySet="priority">
+          <ScalarProperty Name="DescriptionPriority" ColumnName="DescriptionPriority" />
+          <ScalarProperty Name="IdPriority" ColumnName="IdPriority" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

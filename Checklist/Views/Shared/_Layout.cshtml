@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="~/Images/favicon.ico" />
+    @*<meta name="google-signin-client_id" content="640514239595-imtslisbd9unmv9voe5jor4i7l2eq31d.apps.googleusercontent.com">*@
+    <title>@ViewBag.Title - CheckList</title>
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/jquery.toaster.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <script src="~/Scripts/jquery.mask.min.js"></script>
+    @*<script src="~/Scripts/bootstrap-datetimepicker.js"></script>*@
+    @*<script src="~/Scripts/javascript.js"></script>*@
+    <script src="~/Scripts/MomentJs.js"></script>
+    <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+</head>
+<body>
+    <div class="row">
+        <div class="navbar-wrapper">
+            <div class="container">
+                <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                            </button>
+                            @Html.ActionLink("📋 Checklist 2.0", "ListTasks", "Tasks", new { area = "" }, new { @class = "navbar-brand" })
+                        </div>
+                        @if (Session["IdUser"] != null)
+                        {
+                            <div class="navbar-collapse collapse">
+                                @*<ul class="nav navbar-nav">
+                                        <li><a href="#">Home</a></li>
+                                    </ul>*@
+                                <ul class="nav navbar-nav navbar-right">
+
+                                    <li class="dropdown">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                            🙌🏽 Account 🛠
+                                            <b class="caret"></b>
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <div class="navbar-content">
+                                                    <div class="row">
+                                                        <div class="col-md-5">
+                                                            <img src="~/Images/login-icon.png" alt="Alternate Text" class="img-responsive" />
+                                                            <p class="text-center small">
+                                                                @*<a href="#">Change Photo</a>*@
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-md-7">
+                                                            <span>@Session["Name"].ToString()</span>
+                                                            <p class="text-muted small">
+                                                                <span>@Session["Email"].ToString()</span>
+                                                            </p>
+                                                            <div class="divider">
+                                                            </div>
+                                                            <a href="#" class="btn btn-primary btn-sm active disabled">Ver Perfil</a>
+                                                            <span id="time-session"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="navbar-footer">
+                                                    <div class="navbar-footer-content">
+                                                        <div class="row">
+                                                            <div class="col-md-6" style="float:left">
+                                                                <a href="@Url.Action("ChangePassword", "User")" class="btn btn-default btn-sm">🔐 Mudar Senha</a>
+                                                            </div>
+                                                            <div class="col-md-6" style="float:right">
+                                                                <a href="@Url.Action("Login", "User")" class="btn btn-danger btn-sm pull-right">🚪 Sair</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @TaskRazor.Gif()
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - 🤵🏾 Developed by <a href="https://about.me/lucasluizss" target="_blank">Lucas Santos</a>💼</p>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+
+    function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+            minutes = parseInt(timer / 60, 10)
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = "⏱ " + minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                timer = duration;
+            }
+        }, 1000);
+    }
+
+    window.onload = function () {
+        var timeOut = @Session.Timeout * 60,
+            display = document.querySelector('#time-session');
+        startTimer(timeOut, display);
+    };
+</script>

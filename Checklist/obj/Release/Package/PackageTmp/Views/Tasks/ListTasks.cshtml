@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Checklist.Models.tasks>
+
+@{
+    ViewBag.Title = "ListTasks";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var idTask = "idTask";
+    var idTaskDescription = "idTaskDescription";
+    var idTitle = "idTitle";
+    var idStartDate = "idStartDate";
+    var idEndDate = "idEndDate";
+    var idStep = "idStep";
+    var idPriority = "idPriority";
+    var btnTaskSave = "btnTaskSave";
+    //              Modal               //
+    var idTitleModal = "idTitleModal";
+    var idDescriptionModel = "idDescriptionModel";
+    var idStartDateModal = "idStartDateModal";
+    var idEndDateModal = "idEndDateModal";
+    var btnDescription = "btnDescription";
+    var btnDeleteTask = "btnDeleteTask";
+    var idPriorityModal = "idPriorityModal";
+    var btnChangeStep = "btnChangeStep";
+    var idReason = "idReason";
+    var idChangeStep = "idChangeStep";
+}
+
+<link href="~/Content/Tasks/Tasks.css" rel="stylesheet" />
+<br /><br />
+<h4 class="control-label"><img src="~/Images/new-task.png" style="width:40px; height:40px;" /><b><u>Nova Tarefa</u></b></h4>
+<div class="form-horizontal">
+    <div class="form-group">
+        <label class="control-label col-md-1"><b>Título:</b></label>
+        <div class="col-md-7"><input type="text" id="@idTitle" maxlength="100" class="form-control" placeholder="✍️ Digite o título da tarefa aqui..." /></div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-md-1"><b>Descrição:</b></label>
+    </div>
+    <div class="form-group">
+        <div class="col-md-8">
+            <textarea id="@idTaskDescription" class="form-control" maxlength="1000" rows="6" placeholder="💬 Digite sua tarefa aqui..."></textarea>
+        </div>
+        <div class="form-group info-add">
+            <label class="col-md-1"><b>Começo:</b></label>
+            <div class="col-md-3"><input class="form-group date" type="text" id="@idStartDate" placeholder="📆 dd/MM/yyyy" /></div>
+            <br /><br />
+            <label class="col-md-1"><b>Término:</b></label>
+            <div class="col-md-3"><input class="form-group date" type="text" id="@idEndDate" placeholder="📆 dd/MM/yyyy" /></div>
+            
+            <br /><br />
+            <label class="col-md-1"><b>Prioridade:</b></label>
+            <select class="col-md-2" id="@idPriority">
+                <option value="0">Selecionar...</option>
+                <option value="1">Alta</option>
+                <option value="2">Média</option>
+                <option value="3">Baixa</option>
+                <option value="4">Nenhuma</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" id="@btnTaskSave" value="💾 Adicionar" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+
+<h4 class="control-label"><b><u><img src="~/Images/list-tasks.png" style="width:40px; height:40px" />Lista de Tarefas</u></b></h4>
+
+<h4 class="col-md-8 col-lg-offset-2">@Html.ValidationMessage("notify", new { @class = "text-danger notify" })</h4>
+
+<table class="table table-hover col-md-12" id="description">
+    
+    @foreach (var item in Model)
+    {
+        <tr id="@item.IdTask">
+            <td>
+                <h6 class="Title"><b>@item.Title</b></h6>
+                <span class="ProgressDescription Description">@Html.DisplayFor(modelItem => item.Description)</span><br />
+                <span onclick="getStepTask(@item.IdTask);" class="ProgressStep Status" title="Clique aqui para alterar o progresso...">⌚️ @item.step.DescriptionStep</span>
+            </td>
+            <td><p onclick="getEditTask(@item.IdTask);" id="editTask"><img src="~/Images/editar.png" style="width:30px; height:30px;" title="Clicke aqui para editar..." /></p></td>
+
+            <td><p onclick="getDeleteTask(@item.IdTask);" id="deleteTask"><img src="~/Images/delete.png" style="width:30px; height:30px;" title="Click aqui para deletar..." /></p></td>
+        </tr>
+    }
+
+</table>
+
+@TaskRazor.ModalEditTask(@idTitleModal, @idDescriptionModel, @btnDescription, @idStartDateModal, @idEndDateModal, @idPriorityModal)
+
+@TaskRazor.ModalChangeStep(@btnChangeStep, @idReason, @idChangeStep)
+
+@TaskRazor.ModalDeleteTask(@btnDeleteTask)
+
+@*<script type="text/javascript" src="https://counter1.fcs.ovh/private/counter.js?c=2jj2rnrhahzqwhbbtx2updgg19gee7gb"></script>
+    <noscript>
+        <a href="https://www.webcontadores.com" title="contador de visitas para blog">
+            <img src="https://counter1.fcs.ovh/private/webcontadores.php?c=2jj2rnrhahzqwhbbtx2updgg19gee7gb" border="0" title="contador de visitas para blog" alt="contador de visitas para blog">
+        </a>
+    </noscript>*@
+
+<script>
+    //Variáveis de acesso as actions [URL]
+    var Url = {
+        ListTask: "@Url.Action("ListTasks", "Tasks")",
+        NewTask: "@Url.Action("NewTask", "Tasks")",
+        EditStep: "@Url.Action("EditStep", "Tasks")",
+        Edit: "@Url.Action("Edit", "Tasks")",
+        DeleteTask: "@Url.Action("DeleteTask", "Tasks")",
+        GetTaskById: "@Url.Action("GetTaskById", "Tasks")",
+        GetDescriptionStep: "@Url.Action("GetDescriptionStep", "Tasks")",
+        GetDescriptionPriority: "@Url.Action("GetDescriptionPriority", "Tasks")"
+    }
+
+    //Variáveis de identificação para utilização no JS
+    var GeneralSettings = {
+        Id: "#@idTask",
+        Description: "#@idTaskDescription",
+        Title: "#@idTitle",
+        StartDate: "#@idStartDate",
+        EndDate: "#@idEndDate",
+        BtnSave: "#@btnTaskSave",
+        PrioritySelect: "#@idPriority",
+        Step: "#@idStep",
+        //              Modal              //
+        TitleModal: "#@idTitleModal",
+        DescriptionModal: "#@idDescriptionModel",
+        StartDateModal: "#@idStartDateModal",
+        EndDateModal: "#@idEndDateModal",
+        BtnDescription: "#@btnDescription",
+        BtnDeleteTask: "#@btnDeleteTask",
+        PriorityModal: "#@idPriorityModal",
+        ChangeStepBtn: "#@btnChangeStep",
+        ChangeStep: "#@idChangeStep",
+    }
+
+</script>
+<script src="~/Scripts/Tasks/Tasks.js"></script>

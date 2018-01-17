@@ -1,0 +1,57 @@
+﻿@model Checklist.Models.user
+
+@{
+    ViewBag.Title = "Novo usuário";
+}
+<br />
+@Html.AntiForgeryToken()
+<span class="col-lg-offset-1">@Html.ValidationMessage("error", new { @class = "text-danger" })</span>
+<div class="form-horizontal">
+    <h4 class="col-lg-offset-1"><img src="~/Images/newuser-icon.png" width="40" height="40" /><b><u>Novo Usuário</u></b></h4>
+    <hr />
+    <span class="col-lg-offset-1">@Html.ValidationMessage("error", new { @class = "text-danger" })</span>
+    <div class="form-group">
+        <label class="control-label col-md-1">Nome:</label>
+        <div class="col-md-3">
+            <input type="text" name="Name" id="Name" class="form-control" placeholder="😀 Digite seu nome aqui..." maxlength="100" required autofocus />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1">Email:</label>
+        <div class="col-md-3">
+            <input type="email" name="Email" id="Email" class="form-control" placeholder="📧 Digite seu email aqui..." maxlength="100" required autofocus />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1">Senha</label>
+        <div class="col-md-3">
+            <input type="password" name="Password" id="Password" class="form-control" placeholder="🔑 Digite sua super senha aqui..." maxlength="50" required autofocus />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-md-1">Confirme:</label>
+        <div class="col-md-3">
+            <input type="password" name="PasswordConfirm" id="PasswordConfirm" class="form-control" placeholder="🔑 Repita sua senha secreta..." maxlength="50" required autofocus />
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-1 col-md-12">
+            <input type="submit" value="💾 SALVAR" class="btn btn-default" id="btnSave" />
+        </div>
+    </div>
+</div>
+
+<div>
+    <a href="@Url.Action("Login","User")">Voltar para fazer login...</a>
+</div>
+<script>
+    var Url = {
+        NewUser: "@Url.Action("NewUser","User")",
+        Login: "@Url.Action("Login","User")"
+    }
+</script>
+<script src="~/Scripts/User/User.js"></script>
