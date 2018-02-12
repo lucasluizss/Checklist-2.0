@@ -21,7 +21,7 @@ namespace Checklist.Business
             {
                 throw new Exception("Faltou a descrição da tarefa!");
             }
-            
+
             if (newTask.StartDate == null)
             {
                 throw new Exception("Faltou a data de início da tarefa!");
@@ -72,7 +72,8 @@ namespace Checklist.Business
             task.step = step;
             task.LastDescriptionReason = statusStep.Description ?? "-";
 
-            var reason = new reasons() {
+            var reason = new reasons()
+            {
                 IdStep = step.IdStep,
                 IdTask = task.IdTask,
                 Description = statusStep.Description ?? "-",
@@ -80,7 +81,7 @@ namespace Checklist.Business
                 step = step,
                 tasks = task
             };
-            
+
             try
             {
                 SaveReason(reason);
@@ -140,11 +141,14 @@ namespace Checklist.Business
 
         public tasks DeleteTask(tasks task)
         {
+            checkListDB.Configuration.ProxyCreationEnabled = false;
+
             //Lambda para buscar uma tarefa pelo ID
             task = checkListDB.tasks.FirstOrDefault(c => c.IdTask == task.IdTask);
 
             try
             {
+                RemoveAllDependencies(task);
                 checkListDB.tasks.Attach(task);
                 checkListDB.tasks.Remove(task);
                 checkListDB.SaveChanges();
@@ -173,6 +177,25 @@ namespace Checklist.Business
                 checkListDB.SaveChanges();
 
                 return reasons;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
+        public void RemoveAllDependencies(tasks task)
+        {
+            var reasonsList = checkListDB.reasons.Where(x => x.IdTask == task.IdTask).ToList();
+
+            try
+            {
+                reasonsList.ForEach(reason => 
+                    checkListDB.reasons.Remove(reason)
+                );
+
+                checkListDB.SaveChanges();
+
             }
             catch (Exception ex)
             {

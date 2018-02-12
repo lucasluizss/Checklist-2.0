@@ -53,15 +53,15 @@ $(GeneralSettings.BtnSave).click(function () {
 
                 //Adicionando na Lista
                 $("#description").append(
-                '<tr id="' + data.IdTask + '">' +
-                '<td>' +
-                '<h6><b>' + data.Title + '</b></h6>' +
-                '<span class="ProgressDescription Description">' + data.Description + '</label><br />' +
-                '<span title="Click aqui para para mudar o progresso." onclick="getStepTask(' + data.IdTask + ');" class="ProgressStep Status">⌚️ Aguardando Início...</span>' +
-                '</td>' +
-                '<td><p onclick="getEditTask(' + data.IdTask + ');" id="editTask"><img src="/Images/editar.png" style="width:30px; height:30px;" title="Clicke aqui para editar..."/></p></td> ' +
-                '<td><p onclick="getDeleteTask(' + data.IdTask + ');" id="deleteTask"><img src="/Images/delete.png" style="width:30px; height:30px;" title="Click aqui para deletar..."/></p></td>' +
-                '</tr>'
+                    '<tr id="' + data.IdTask + '">' +
+                        '<td>' +
+                            '<h6 class="Title"><b>' + data.Title + '</b></h6>' +
+                            '<span class="ProgressDescription Description">' + data.Description + '</label><br />' +
+                            '<span title="Click aqui para para mudar o progresso." onclick="getStepTask(' + data.IdTask + ');" class="ProgressStep Status">⌚️ Aguardando Início...</span>' +
+                        '</td>' +
+                        '<td><p onclick="getEditTask(' + data.IdTask + ');" id="editTask"><img src="/Images/editar.png" style="width:30px; height:30px;" title="Clicke aqui para editar..."/></p></td> ' +
+                        '<td><p onclick="getDeleteTask(' + data.IdTask + ');" id="deleteTask"><img src="/Images/delete.png" style="width:30px; height:30px;" title="Click aqui para deletar..."/></p></td>' +
+                    '</tr>'
                 );
 
                 $(".notify").hide();
@@ -265,8 +265,8 @@ $(GeneralSettings.BtnDescription).click(function () {
             success: function (data) {
                 $('.ed-modal-lg').modal('hide');
                 //TODO: Ao adicionar uma tarefa e mudar o status para pronto e edita-la o status some..
-                $("#" + data.IdTask + ' .Title').html(data.Title);
-                $("#" + data.IdTask + ' .Description').html(data.Description);
+                $("#titleValue" + data.IdTask + ' .Title').text(data.Title);
+                $("#descriptionValue" + data.IdTask + ' .Description').text(data.Description);
                 $.toaster({ priority: 'success', title: '✅', message: 'tarefa atualizada com sucesso!' });
             },
             error: function (error) {

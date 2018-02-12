@@ -75,8 +75,8 @@
     {
         <tr id="@item.IdTask">
             <td>
-                <h6 class="Title"><b>@item.Title</b></h6>
-                <span class="ProgressDescription Description">@Html.DisplayFor(modelItem => item.Description)</span><br />
+                <h6 class="Title"><b id="titleValue+@item.IdTask">@item.Title</b></h6>
+                <span class="ProgressDescription Description" id="descriptionValue+@item.IdTask">@Html.DisplayFor(modelItem => item.Description)</span><br />
                 <span onclick="getStepTask(@item.IdTask);" class="ProgressStep Status" title="Clique aqui para alterar o progresso...">⌚️ @item.step.DescriptionStep</span>
             </td>
             <td><p onclick="getEditTask(@item.IdTask);" id="editTask"><img src="~/Images/editar.png" style="width:30px; height:30px;" title="Clicke aqui para editar..." /></p></td>
